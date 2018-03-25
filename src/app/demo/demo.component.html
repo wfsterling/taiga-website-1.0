@@ -1,0 +1,59 @@
+<div class="container">
+    <h1 id="taiga-market---proof-of-concept-demo">Taiga Market - Proof of Concept Demo</h1>
+
+    <p>Taiga Market PoC is composed of two components:</p>
+    
+    <ul>
+        <li><strong>Asset Builder</strong> - Allows the creation of a smart contract and its respective assets</li>
+        <li><strong>Alien Invasion dApp Game</strong> - Will access the blockchain to load the spaceships the user owns in order to use in the game</li>
+    </ul>
+
+    <p><a href="https://www.youtube.com/watch?v=BH4r1AuINH0">Explained walkthrough of our demo</a></p>
+
+    <h2 id="asset-builder">Asset Builder</h2>
+    <p>In order to use these applications you will need to install Metamask or any other Web3 provider and connect to the "Ropsten Test Network". In case you don't have Ether, please request them via the Ropsten Faucet application.</p>
+
+    <p>The first step is to create the assets on the Asset Builder:</p>
+
+    <ol style="list-style-type: decimal">
+        <li>Go to <a href="https://taigamarket.firebaseapp.com/">https://taigamarket.firebaseapp.com/</a></li>
+        <li>Create your store</li>
+    </ol>
+
+    <p>Once the store is created (corresponding to deploy a new smart contract on the Ethereum Network) we need to create each asset with the respective tokens.</p>
+
+    <p>We have prepared this demo with three assets: - TFigther - MFalcon - Enterprise</p>
+    <p>Each of these spaceships need to have different properties. You can customize your asset with the name, description and total supply you want. Please be aware that the price is not currently being used.</p>
+    <p>Here are three different JSON text for the properties field:</p>
+
+    <ul>
+        <li>TFither <code>"spriteImage": "images/sprites/tfighter.png"</code></li>
+        <li>MFalcon <code>"spriteImage": "images/sprites/mfalcon.png"</code></li>
+        <li>Enterprise <code>"spriteImage": "images/sprites/enterprise.png"</code></li>
+    </ul>
+
+    <img src="assets/img/sprites.png" alt="MFalcon to be used in Alien Invasion" class="sample" >
+
+    <p>In case you want to create your own spaceship, you need to edit the following image and store in a server (or at IPFS):
+         The JSON properties will need to be changed accordingly.
+    </p>
+
+    <p>Once all the assets are created, they all belong to the owner.</p>
+    <p>We suggest you to create a second account on the Ropsten Network and use the bottom of the Asset Builder in order to transfer one of the tokens to the second account. The address of the smart contract needs to be copied from the store smart contract address which was populated when the store was created. You can inspect the console of your browser in order to know the TokenIds for each asset type.</p>
+    
+    <p>Now that all the assets are created and transferred, you can login to the Alien Invasion dApp Game to play.</p>
+
+    <h1 id="alien-invasion-dapp-game">Alien Invasion dApp Game</h1>
+
+    <p>In order to play this game with the assets you have just created, you need to do the following:</p>
+
+    <ol style="list-style-type: decimal">
+        <li>Go to <a href="https://taiga-alieninvasion.firebaseapp.com">https://taiga-alieninvasion.firebaseapp.com</a></li>
+        <li>Set your smart contract address created in the Asset Builder form</li>
+        <li>Click reload in order to connect to the blockchain</li>
+    </ol>
+
+    <p>The game will connect to the Ropsten Network and load the assets for the selected account on Metamask. If you change the account on the Metamask, please click the reload button again.</p>
+
+    <p><strong>Have fun!</strong></p>
+</div>
