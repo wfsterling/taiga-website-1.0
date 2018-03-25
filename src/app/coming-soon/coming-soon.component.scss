@@ -1,0 +1,13 @@
+
+.container {
+  grid-template-columns: 40px auto 40px;
+  grid-template-rows: auto;
+  text-align: center;
+}
+img {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: row1-start;
+  grid-row-end: 2;
+  max-width: 100%;
+}
